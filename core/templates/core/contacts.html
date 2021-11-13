@@ -1,0 +1,75 @@
+{% extends 'core/base.html'%}
+{% load static%}
+
+{%block title%} Contacts {%endblock%}
+
+{%block content%}
+<div class="container">
+    <div class="heading border-bottom mt-5 bg-dark sticky-top">
+        <h1 class="text-uppercase font-weight-bold text-warning">contact us</h1>
+    </div>
+    <div class="row text-center py-5">
+        <div class="col-sm-12 text-center m-auto">
+            <p class="text-center">
+                Do you have nay questions? Please do not hesitate to contact. i will com back to you within a matter of hours to help you.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+            <form>
+                <div class="d-flex mb-3 ">
+                    <div class=" mr-1 w-100">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp">
+                    </div>
+
+                    <div class="ml-1 w-100">
+                        <label for="exampleInputEmail1" class="form-label">Your Email Address<sup class="text-warning">*</sup></label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                </div>
+
+                <div class="mb-3 ml-1">
+                    <label for="subject" class="form-label">Your Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject" aria-describedby="subjectlHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message<sup class="text-warning">*</sup></label>
+                    <textarea class="form-control" id="message" name="message" aria-label="With textarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-3">
+            <div class="d-flex flex-column">
+                <div class="my-3 text-center">
+                    <i class="fas fa-map-marker-alt text-warning" style="font-size: 30px;"></i>
+                    <p>
+                        Gazaria,Munshiganj,Dhaka
+                    </p>
+                </div>
+                <div class="my-3 text-center">
+                    <i class="fas fa-phone text-warning" style="font-size: 30px;"></i>
+                    <p>
+                        <a href="telto:+880182XXXXXXX" class="nav-link">+880182XXXXXXX</a>
+                    </p>
+                </div>
+                <div class="my-3 text-center">
+                    <i class="fas fa-envelope text-warning" style="font-size: 30px;"></i>
+                    <p>
+                        <a href="mailto:mdatikurr355@gmail.com" class="nav-link">mdatikurr355@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center d-flex justify-content-center align-items-center mt-5">
+        <a href="" class="nav-link text-warning"><i class="fab fa-twitter"></i></a>
+        <a href="" class="nav-link text-warning"><i class="fab fa-facebook"></i></a>
+        <a href="" class="nav-link text-warning"><i class="fab fa-instagram"></i></a>
+        <a href="" class="nav-link text-warning"><i class="fab fa-dribbble"></i></a>
+    </div>
+
+</div>
+{%endblock content%}

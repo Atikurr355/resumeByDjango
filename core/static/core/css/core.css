@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+.text-color{
+    color: silver;
+}
+.st-font{
+    font-family: 'Satisfy', cursive;
+}
+.side-bar{
+    position:sticky;
+    top:0;
+    left:0;
+    bottom:0;
+}
+.hr{
+    width:100%;
+}
+.card-text{
+    outline:none;
+    color: silver;
+}
+a.nav-link{
+    color: silver;
+    font-weight: cursive;
+}
+
+.nav a:hover{
+    background-color: yellowgreen;
+    color:#000;
+}
+a.active{
+    background-color: #ffc107;
+    color:#000;
+    font-weight: bold;
+}
+
+
+
+
+
+html{
+    overflow-x: hidden;
+}
